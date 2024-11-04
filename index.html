@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album XII MIPA 3 - GELIGA NEXA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* Gaya Modal */
+        .modal {
+            display: none; /* Tersembunyi secara default */
+            position: fixed; /* Tetap di tempat */
+            z-index: 1000; /* Di atas elemen lainnya */
+            left: 0;
+            top: 0;
+            width: 100%; /* Lebar penuh */
+            height: 100%; /* Tinggi penuh */
+            overflow: auto; /* Aktifkan gulir jika diperlukan */
+            background-color: rgba(0, 0, 0, 0.8); /* Latar belakang gelap dengan transparansi */
+            transition: opacity 0.5s; /* Transisi untuk animasi */
+            opacity: 0; /* Memulai dengan transparansi */
+        }
+
+        .modal.show {
+            display: block; /* Tampilkan modal */
+            opacity: 1; /* Buat modal tampak */
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 90%; /* Lebar gambar dalam modal */
+            max-width: 700px; /* Lebar maksimum */
+            border-radius: 20px; /* Sudut melengkung */
+            transition: transform 0.5s ease; /* Transisi saat gambar tampil */
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 95%; /* Lebar gambar dalam modal untuk ponsel */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img/image.png" alt="Logo Sekolah" class="logo">
+            <div class="text-content">
+                <h1 class="title">Album XII MIPA 3 - GELIGA NEXA</h1>
+                <p class="subtitle">Kenangan bersama kelas XII MIPA 3 SMA NEGERI 1 SINTANG</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="gallery-item"><img src="img/1.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/2.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/3.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/4.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/5.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/6.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/7.png" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/8.png" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/9.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/10.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/11.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/12.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/13.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/14.jpg" alt="Kenangan"></div>
+            <!-- <div class="gallery-item"><img src="img/15.HEIC" alt="Kenangan"></div> gak kebaca anjir .heic -->
+            <!-- <div class="gallery-item"><img src="img/16.jpg" alt="Kenangan"></div> corrupt -->
+            <div class="gallery-item"><img src="img/17.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/18.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/19.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/20.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/21.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/22.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/23.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/24.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/25.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/26.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/27.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/28.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/29.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/30.jpg" alt="Kenangan"></div>
+            <!-- <div class="gallery-item"><img src="img/31.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/32.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/33.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/34.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/35.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/36.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/37.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/38.jpg" alt="Kenangan"></div>
+            <div class="gallery-item"><img src="img/39.jpg" alt="Kenangan"></div> -->
+        </section>
+    </main>
+
+    <!-- Modal untuk Gambar -->
+    <div class="modal" id="imageModal">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 XII MIPA 3 - GELIGA NEXA by <a href="https://instagram.com/syarifsajjad" style="font-weight: bold; color: #000;"><b>@Syarif Muhammad Sajjad</b></a></p>
+    </footer>
+    <script>
+        // Ambil elemen modal
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImage");
+        var closeModal = document.getElementById("closeModal");
+
+        // Ambil semua gambar galeri
+        var galleryItems = document.querySelectorAll(".gallery-item img");
+
+        // Loop melalui setiap gambar dan tambahkan event listener
+        galleryItems.forEach(function (img) {
+            img.onclick = function () {
+                modalImg.src = this.src; // Set src gambar ke gambar modal
+                modal.classList.add("show"); // Tampilkan modal dengan animasi
+            }
+        });
+
+        // Ketika pengguna mengklik tombol close, sembunyikan modal
+        closeModal.onclick = function () {
+            modal.classList.remove("show"); // Sembunyikan modal dengan animasi
+        }
+
+        // Ketika pengguna mengklik di luar gambar, sembunyikan modal
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.classList.remove("show"); // Sembunyikan modal dengan animasi
+            }
+        }
+    </script>
+</body>
+</html>

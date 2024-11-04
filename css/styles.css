@@ -1,0 +1,130 @@
+/* Reset gaya bawaan */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya Umum */
+body {
+    font-family: "Libre Baskerville", serif;
+    background: linear-gradient(135deg, #e1f5fe 0%, #fff 100%); /* Gradien Latar Belakang */
+    color: #333;
+    transition: background 0.5s ease; /* Animasi latar belakang */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    padding: 30px 20px;
+    background-color: rgba(168, 230, 207, 0.9); /* Transparan untuk efek lapisan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk kedalaman */
+}
+
+.header-content {
+    display: flex; /* Menyusun logo dan teks dalam satu baris */
+    align-items: center; /* Menyelaraskan vertikal */
+    justify-content: center; /* Mengatur agar isi header rata tengah */
+    width: 100%; /* Memastikan header content menggunakan lebar penuh */
+}
+
+header .logo {
+    width: 80px; /* Ukuran logo yang lebih besar */
+    height: auto;
+    margin-right: 20px; /* Jarak antara logo dan teks */
+}
+
+.text-content {
+    text-align: left; /* Menjaga teks sejajar ke kiri */
+}
+
+/* Title styling */
+.title {
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin: 0; /* Menghilangkan margin */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Animasi perubahan warna */
+}
+
+/* Subtitle styling */
+.subtitle {
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #34495e;
+    margin: 0; /* Menghilangkan margin */
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+    transition: color 0.3s ease; /* Animasi perubahan warna */
+}
+
+/* Gaya Galeri */
+.gallery {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 gambar per baris */
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Tambahkan animasi bayangan */
+    display: flex; /* Mengaktifkan flexbox */
+    justify-content: center; /* Mengatur konten agar berada di tengah horizontal */
+    align-items: center; /* Mengatur konten agar berada di tengah vertical */
+    height: 200px; /* Menentukan tinggi untuk konsistensi */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Perbesar saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam saat hover */
+}
+
+.gallery-item img {
+    max-width: 100%;             /* Membatasi lebar gambar */
+    max-height: 100%;            /* Membatasi tinggi gambar */
+    object-fit: cover;           /* Memastikan gambar tidak terdistorsi */
+    transition: transform 0.3s;
+}
+
+/* Responsif: untuk tablet (iPad) - 4 gambar per baris */
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr); /* Tetap 4 gambar per baris pada iPad */
+    }
+}
+
+/* Responsif: untuk layar kecil (ponsel) - 2 gambar per baris */
+@media (max-width: 768px) {
+    header .logo {
+        width: 60px; /* Ukuran logo lebih kecil di ponsel */
+    }
+    
+    .title {
+        font-size: 2em; /* Ukuran font lebih kecil di ponsel */
+    }
+    
+    .subtitle {
+        font-size: 1em; /* Ukuran subtitle lebih kecil di ponsel */
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Hanya 2 gambar per baris pada ponsel */
+    }
+}
+
+/* Gaya Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(168, 230, 207, 0.9); /* Transparan untuk efek lapisan */
+    color: #333;
+    font-size: 0.9em;
+    border-radius: 20px 20px 0 0;
+}
